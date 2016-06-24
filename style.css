@@ -65,8 +65,8 @@ img {
 	width: 200px;
 	border-radius: 100px;
 	margin-bottom: 20px;
-	-webkit-animation: multiply 1500ms linear;
-    -moz-animation: multiply 1500ms linear;
+	-webkit-animation: multiply 1500ms ease;
+    -moz-animation: multiply 1500ms ease;
 }
 
 .gradiant-body {
@@ -140,28 +140,13 @@ img {
 	margin: 5px;
 	cursor: pointer;
 }
-.generic-sprite: hover {
-	border-bottom: solid 2px darkorange;
+.generic-sprite:hover {
+	background: url('generic-sprite-dark.png') no-repeat top left;
+	border-bottom: solid 2px #222;
 }
-.generic-sprite.bookmark { background-position: 0 0; width: 13px; } 
-.generic-sprite.download { background-position: -18px 0; width: 17px; } 
-.generic-sprite.facebook { background-position: -40px 0; } 
-.generic-sprite.feed { background-position: -60px 0; width: 14px; } 
-.generic-sprite.github { background-position: -79px 0; } 
-.generic-sprite.google-plus { background-position: -99px 0; } 
-.generic-sprite.linkedin { background-position: -119px 0; } 
-.generic-sprite.location { background-position: -139px 0; width: 10px; } 
-.generic-sprite.mail { background-position: -154px 0; width: 18px; } 
-.generic-sprite.phone { background-position: -177px 0; width: 14px; } 
-.generic-sprite.pinterest { background-position: -196px 0; } 
-.generic-sprite.pocket { background-position: -216px 0; width: 17px; } 
-.generic-sprite.quote-left { background-position: -238px 0; width: 17px; } 
-.generic-sprite.quote-right { background-position: -260px 0; width: 17px; } 
-.generic-sprite.share { background-position: -282px 0; } 
-.generic-sprite.skype { background-position: -302px 0; } 
-.generic-sprite.stack-overflow { background-position: -322px 0; } 
-.generic-sprite.user { background-position: -342px 0; width: 14px; } 
-.generic-sprite.volume-down { background-position: -361px 0; width: 12px; } 
-.generic-sprite.volume-off { background-position: -378px 0; width: 8px; } 
-.generic-sprite.volume-up { background-position: -391px 0; width: 17px; } 
-.generic-sprite.wordpress { background-position: -413px 0; width: 18px; } 
+.generic-sprite.facebook { background-position: 0 0; } 
+.generic-sprite.github { background-position: -25px 0; } 
+.generic-sprite.linkedin { background-position: -50px 0; } 
+.generic-sprite.pocket { background-position: -75px 0; width: 17px; } 
+.generic-sprite.stack-overflow { background-position: -102px 0; } 
+.generic-sprite.wordpress { background-position: -127px 0; width: 18px; } 
