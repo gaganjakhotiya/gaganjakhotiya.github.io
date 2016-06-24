@@ -33,6 +33,16 @@ body {
     to { -webkit-filter: hue-rotate(-360deg) }
 }
 
+@-webkit-keyframes fadeIn {
+    from { position: relative; top: 40px; opacity: 0; }
+    to { position: relative; top: 0px; opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    from { position: relative; top: 40px; opacity: 0; }
+    to { position: relative; top: 0px; opacity: 1; }
+}
+
 @-webkit-keyframes multiply {
     from { opacity: 0 }
     25% { opacity: .1 }
@@ -45,6 +55,14 @@ body {
     25% { opacity: .1 }
     50% { opacity: .2 }
     to { opacity: 1 }
+}
+
+.fadeIn {
+	position: relative;
+	top: 0px;
+	opacity: 1!important;
+	-webkit-animation: 1s fadeIn ease;
+    -moz-animation: 1s fadeIn ease;
 }
 
 .text-selected {
@@ -127,6 +145,7 @@ img {
 
 .tags {
 	display: inline-block;
+	opacity: 0;
 }
 
 .tags div {

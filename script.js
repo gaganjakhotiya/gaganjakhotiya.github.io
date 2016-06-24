@@ -105,7 +105,9 @@
 			backspace.bind(null, REAL_NAME.length, TEXT_CURSOR_NODE,
 				type.bind(null, ALIAS, TEXT_CURSOR_NODE, function(){
 					USER_HANDLE_NODE.appendChild(TEXT_CURSOR_NODE);
-					type(HANDLE, TEXT_CURSOR_NODE)
+					type(HANDLE, TEXT_CURSOR_NODE, function(){
+						document.getElementsByClassName('tags')[0].className += ' fadeIn';
+					})
 				})))
 	}, 1500);
 }());
